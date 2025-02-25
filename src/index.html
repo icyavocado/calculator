@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A Calculator Project</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.scss">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id="app">
+    <div id="wrapper" class="container d-flex flex-row rounded-0">
+      <div id="calculator" class="card w-100 rounded-0 border border-end-0 bg-secondary p-2">
+
+        <div class="display bg-dark grid px-2 mb-1" style="--bs-rows: 1; --bs-columns: 12; --bs-gap: 0;">
+          <div class="secondary-display text-end g-col-12 text-white-50 text-nowrap d-flex justify-content-end align-items-end" style="font-size: 1rem; min-height: 1.5rem;"></div>
+          <div class="primary-display text-end g-col-12 text-white text-nowrap d-flex justify-content-end" style="font-size: 2rem; min-height: 3rem;">0</div>
+        </div>
+
+        <div class="buttons grid mt-1" style="--bs-rows: 5; --bs-columns: 12; --bs-gap: 0.25rem;">
+          <div class="clear g-col-6 btn btn-lg btn-danger rounded-0">Clear</div>
+          <div class="percentage num g-col-3 btn btn-lg btn-warning rounded-0">%</div>
+          <div class="operation g-col-3 btn btn-lg btn-warning rounded-0">÷</div>
+
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">7</div>
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">8</div>
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">9</div>
+          <div class="operation g-col-3 btn btn-lg btn-warning rounded-0">×</div>
+
+
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">4</div>
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">5</div>
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">6</div>
+          <div class="operation g-col-3 btn btn-lg btn-warning rounded-0">−</div>
+
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">1</div>
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">2</div>
+          <div class="num g-col-3 btn btn-lg btn-dark rounded-0">3</div>
+          <div class="operation g-col-3 btn btn-lg btn-warning rounded-0">+</div>
+        
+          <div class="num g-col-6 btn btn-lg btn-dark rounded-0">0</div>
+          <div class="num dot g-col-3 btn btn-lg btn-dark rounded-0">.</div>
+          <div class="equal g-col-3 btn btn-lg btn-warning rounded-0">=</div>
+        </div>
+      </div>
+      <div id="history" class="card rounded-0 d-none d-md-block" style="width: 18rem;">
+        <ul class="list-group list-group-flush">
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

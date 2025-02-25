@@ -1,0 +1,13 @@
+// Enable CSS Grid
+$enable-cssgrid: true;
+
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+.clickable {
+    cursor: pointer;
+}
+
+#wrapper {
+    max-width: 500px;
+}
